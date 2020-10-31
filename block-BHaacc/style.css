@@ -1,0 +1,387 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.container {
+	max-width: 1450px;
+	margin: 0px auto;
+	padding: 0px 32px;
+}
+body {
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: -0.5px;
+	font-family: 'Poppins', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+.padding {
+ padding: 50px 0;
+}
+
+/* Headers */
+.heading-main {
+	font-size: 52px;
+	margin-bottom: 50px;
+}
+.heading-section, .heading-footer {
+	font-size: 36px;
+	font-weight: 500;
+}
+.heading-blog {
+	font-size: 24px;
+	font-weight: 500;
+	color: #252525;
+}
+
+/* Fexible Layout */
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.justify-start {
+	justify-content: flex-start;
+}
+.align-start {
+	align-items: start;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+/* Buttons */
+.btn {
+	padding: 18px 28px;
+	font-weight: 600;
+	border-radius: 50px;
+	font-size: 18px;
+}
+.btn-red {
+	background-color: #CF3B32;
+	color: #fff
+}
+.btn-red:hover {
+	background-color: #811806;
+	color: rgb(241, 192, 192);
+	box-shadow: 1px 1px 2px 1px #000;
+}
+.btn-transparent {
+  	border: 2px solid #f9f9f9;
+  	color: #f9f9f9;
+}
+.btn-transparent:hover {
+	background-color: #498cda;
+	color: rgb(8, 2, 61);
+	box-shadow: 1px 1px 2px 1px #000;
+}
+.btn-grey {
+	background-color: #efefef;
+	color: #838383;
+}
+.btn-grey:hover {
+	background-color: #81858a;
+	color: #000;
+	box-shadow: 1px 1px 2px 1px #000;
+}
+/* Three squares */
+.square{
+	width: 10px;
+	height: 10px;
+	background-color: #d8d8d8;
+	display: inline-block;
+}
+.square-pattern {
+	margin-bottom: 20px;
+}
+
+/* Heading Section */
+.header-main {
+	color: #fff;
+	padding: 40px;	
+	position: absolute;
+	width: 100%;
+}
+.header-social i {
+	color: #fff;
+}	
+.brand {
+	margin-right: 100px;
+	font-size: 32px;
+	font-weight: 700;
+}
+.header-navigation li {
+	margin-left: 50px;
+}
+.header-navigation a {
+	font-weight: 600;
+	font-size: 18px;
+}
+.header-social li {
+	margin-left: 25px;
+}
+.header-social .btn {
+	margin-left: 25px;
+}
+.hero-btn {
+	margin-right: 20px;
+}
+
+/* Hero Section */
+.hero {
+	padding: 350px 0;
+	background-image: linear-gradient(to right, rgba(12, 117, 230, 0.7), rgba(122, 234, 98, 0.7)), url(../media/home-bg.jpg);
+	background-size: cover;
+	color: #fff;
+	font-weight: 600;
+}
+.heading, .pause-fest {
+	width: 50%
+}
+.call-us {
+	text-transform: uppercase;	
+}
+
+/* Introduction Section */
+.introduction {
+	padding: 100px 0;
+	background: url(../block-BHaacc/assets/about-image.jpg)  no-repeat;
+	background-size: contain;
+	background-position: 85% 45%;       /* 45% not working  */
+}
+.col-1-3 {
+	width: 30%;
+}
+.introductory-col {
+	width: 32%;
+}
+.progress {
+	width: 20%;
+}
+.introductory-col .heading-section {
+	color: #393939;
+}
+.introductory-col p {
+	margin-bottom: 20px;
+	color: #797979;
+}
+.progress-text {
+	margin-bottom: 10px;
+}
+.progress-bar {
+	height: 4px;
+	background-color: #1e1e1e;
+	margin-bottom: 30px;
+}
+.progress-bar1 {
+	width: 85%;
+}
+.progress-bar2 {
+	width: 90%;
+}
+.progress-bar3 {
+	width: 75%;
+}
+.progress-bar4 {
+	width: 70%;
+}
+.smiling-man {
+	width: 100%;
+}
+.progress-text {
+	font-size: 18px;
+	font-weight: 600;
+	color: #4b4b4b;
+}
+
+/* Blog Section */
+.blog {
+	background-color: #EFEFEF;
+}
+.blog-header {
+	text-align: center;
+}
+.blog-article {
+	width: 48.5%;
+	border-radius: 4px;
+	background-color: #fff;
+	margin-bottom: 40px;
+	box-shadow: 2px 2px 4px 2px rgb(233, 224, 224);
+}
+.blog-image {
+	width: 45%;
+}
+.heading-blog {
+	margin-bottom: 10px;
+	text-transform: capitalize;
+}
+.blog-content {
+	width: 50%;
+	padding: 0 10px;
+}
+.blog-content .date {
+	color: #cf3b32;
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: 600;
+}
+.blog-content .date i {
+	margin-right: 5px;
+}
+.blog-body {
+	color: #888;
+	font-weight: 500;
+	margin-bottom: 60px;
+}
+.padding-bottom {
+	padding-bottom: 36px;
+}
+/* Our Work Section*/
+.work-header {
+	text-align : center;
+}
+.work-img {
+	width: 23%;
+}
+/* Contact Us Section */
+.contact-us {
+	background-image: linear-gradient(to right, #0C75E6, #7aea62);
+}
+.contact-header {
+	text-align: center;
+	color: #fff;
+}
+.contact-form {
+	width: 60%;
+}
+.map {
+	width: 320px;
+	height: 320px;
+	margin-right: 100px;
+}
+.map iframe {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.form-text {
+	border: none;
+	border-radius: 10px;
+	color: #999;
+	font-size: 17px;
+	font-weight: 500;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.text-box {
+	width: 48%;	
+}
+.requirements-box {
+	width: 100%;
+	height: 150px;	
+}
+.form-btn {
+	display: inline-block;
+	padding: 18px 48px;
+}
+/* Footer */
+footer{
+	background: linear-gradient(to right, #424242, #000);
+	color: #fff;
+	line-height: 2;
+}
+.footer-main {
+	border-bottom: 1px solid #494949;
+	padding-bottom: 80px;
+}
+.footer-secondary {
+	padding: 40px 0;
+	font-size: 18px;
+	color: #c3c3c3;
+	font-weight: 500;
+}
+.article-company {
+	width: 40%;
+	padding-right:5%;
+}
+.footer-links {
+	width: 30%;
+}
+.company-links {
+	width: 47%
+}
+.services-links {
+	width: 47%;
+}
+.find-us {
+	width: 25%;
+}
+.footer-contact {
+ width: 50%;
+}
+.footer-social {
+	margin-right: 20%;
+}
+.footer-social i {
+	margin-left: 20px;
+	color: #fff;
+}
+.footer-call-us {
+	margin-right: 8%;
+}
+address, .footer-main li, .footer-main p {
+	color: #bbb;
+	font-weight: 600;
+	font-size: 18px;
+}
